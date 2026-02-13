@@ -21,13 +21,13 @@ winget install --id GitHub.cli --accept-source-agreements --accept-package-agree
 ## .NET and C-Sharp
 
 - .NET SDK
-- Visual Studio 2022 Community
-- Visual Studio 2022 Build Tools (C++/MSBuild toolchain)
+- Visual Studio 2025 Community
+- Visual Studio 2025 Build Tools (C++/MSBuild toolchain)
 
 ```powershell
 winget install --id Microsoft.DotNet.SDK --accept-source-agreements --accept-package-agreements
-winget install --id Microsoft.VisualStudio.2022.Community --accept-source-agreements --accept-package-agreements
-winget install --id Microsoft.VisualStudio.2022.BuildTools --accept-source-agreements --accept-package-agreements
+winget install --id Microsoft.VisualStudio.2025.Community --accept-source-agreements --accept-package-agreements
+winget install --id Microsoft.VisualStudio.2025.BuildTools --accept-source-agreements --accept-package-agreements
 ```
 
 ## Node.js and Web
@@ -83,12 +83,12 @@ winget install --id Microsoft.AzureCLI --accept-source-agreements --accept-packa
 
 ## Windows app development
 
-- Visual Studio 2022 Community (with Windows app development workload)
+- Visual Studio 2025 Community (with Windows app development workload)
 - .NET SDK
 - Windows App SDK (installed via Visual Studio workload or NuGet)
 
 ```powershell
-winget install --id Microsoft.VisualStudio.2022.Community --accept-source-agreements --accept-package-agreements
+winget install --id Microsoft.VisualStudio.2025.Community --accept-source-agreements --accept-package-agreements
 winget install --id Microsoft.DotNet.SDK --accept-source-agreements --accept-package-agreements
 ```
 
