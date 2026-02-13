@@ -81,14 +81,23 @@ winget install --id Docker.DockerDesktop --accept-source-agreements --accept-pac
 winget install --id Microsoft.AzureCLI --accept-source-agreements --accept-package-agreements
 ```
 
-## Windows app development (general setup)
+## Windows app development
 
-- Visual Studio (Community) and .NET SDK are recommended; add workloads during VS setup. For Windows App SDK and WinUI 3 development, install Visual Studio and use NuGet packages in your project.
+- Visual Studio 2022 Community (with Windows app development workload)
+- .NET SDK
+- Windows App SDK (installed via Visual Studio workload or NuGet)
 
 ```powershell
 winget install --id Microsoft.VisualStudio.2022.Community --accept-source-agreements --accept-package-agreements
 winget install --id Microsoft.DotNet.SDK --accept-source-agreements --accept-package-agreements
 ```
+
+For Windows App SDK and WinUI development:
+1. During Visual Studio installation, select the **"Windows application development"** workload
+2. In your project, add the `Microsoft.WindowsAppSDK` NuGet package
+3. Use WinUI project templates available in Visual Studio
+
+See [Windows App SDK documentation](https://learn.microsoft.com/windows/apps/windows-app-sdk/) for more details.
 
 Notes:
 
